@@ -1,0 +1,173 @@
+
+=================================================================
+PORTFOLIO WEBSITE - CONTENT UPDATE SUMMARY
+=================================================================
+
+✅ ALL FILES UPDATED WITH YOUR ACTUAL CONTENT
+
+-----------------------------------------------------------------
+FILM SCORING SECTION
+-----------------------------------------------------------------
+
+✓ The OceanMaker
+  - YouTube video embedded: https://www.youtube.com/watch?v=7uzjW9onMks
+  - Full description with expandable "See more" button
+  - Award banner highlighting: 🏆 First Place - Marvin Hamlisch 
+    International Music Awards Film/Media Scoring Youth Division 2024
+  - Links: YouTube video + Award details
+
+✓ SHIFT
+  - YouTube video embedded: https://www.youtube.com/watch?v=TpcFLCJnBLQ
+  - Full description with expandable "See more" button
+  - Link to YouTube video
+
+-----------------------------------------------------------------
+DEEP LEARNING IN MIR SECTION
+-----------------------------------------------------------------
+
+✓ MelGenFuse
+  - Purple gradient background for visual distinction
+  - Full abstract with expandable description
+  - Technology tags: LSTM, RNN, Genre Fusion
+  - Link to published paper in Journal of Student Research
+
+✓ SingStyleTransfer
+  - Green gradient background for visual distinction
+  - Full abstract with expandable description
+  - Technology tags: VAE-GAN, Voice Synthesis, Style Transfer
+  - Link to ISMIR 2024 Late Breaking Demo
+
+-----------------------------------------------------------------
+CONTACT SECTION
+-----------------------------------------------------------------
+
+✓ Email: ml4844@columbia.edu
+✓ LinkedIn: matthew-lee-2a50b2299
+✓ Phone: 551-579-8302
+
+-----------------------------------------------------------------
+NEW FEATURES IMPLEMENTED
+-----------------------------------------------------------------
+
+1. YouTube Video Embeds
+   - Film score project images are now actual YouTube videos
+   - Responsive 16:9 aspect ratio
+   - Lazy loading for better performance
+   - Works on all devices
+
+2. Expandable Descriptions
+   - "See more" / "See less" buttons
+   - Maintains consistent card heights
+   - Smooth text expansion
+   - All long descriptions are collapsible
+
+3. Award Highlight Banner
+   - Gold gradient background for The OceanMaker award
+   - Trophy emoji for visual emphasis
+   - Prominent display without overwhelming the design
+
+4. Research Project Styling
+   - Distinct color gradients (Purple for MelGenFuse, Green for SingStyleTransfer)
+   - Technology tags for quick skill identification
+   - Clean, academic presentation
+
+5. Improved Links
+   - All external links open in new tabs (target="_blank")
+   - Security attributes (rel="noopener")
+   - Hover effects on all interactive elements
+
+-----------------------------------------------------------------
+HOW TO USE
+-----------------------------------------------------------------
+
+1. Download all 3 files:
+   - index.html
+   - styles.css
+   - script.js
+
+2. Place them in the same folder
+
+3. Open index.html in your browser
+
+4. Test the "See more" buttons on project descriptions
+
+5. Test the YouTube video embeds
+
+6. Test on mobile by resizing your browser
+
+-----------------------------------------------------------------
+CUSTOMIZATION TIPS
+-----------------------------------------------------------------
+
+To add more film scores:
+- Copy one of the <article class="project-card"> blocks
+- Change the YouTube embed URL
+- Update the title and description
+- Add or remove the award banner as needed
+
+To add more research projects:
+- Copy one of the research project cards
+- Change the gradient class: research-gradient or research-gradient-alt
+- Update title, abstract, and tags
+- Add publication link
+
+To change colors:
+- Edit CSS variables in styles.css (lines 11-19)
+- Change --primary-color for main accent color
+
+-----------------------------------------------------------------
+RESPONSIVE BEHAVIOR
+-----------------------------------------------------------------
+
+Desktop (1200px+):
+- Two-column project grid
+- Full navigation bar
+- Hover effects active
+
+Tablet (768px - 1199px):
+- Two-column grid adjusts
+- Full navigation bar
+- Touch-friendly interactions
+
+Mobile (<768px):
+- Single-column layout
+- Hamburger menu
+- Stacked content
+- Touch-optimized buttons
+
+-----------------------------------------------------------------
+DEPLOYMENT READY
+-----------------------------------------------------------------
+
+Your portfolio is now ready to deploy to:
+✓ GitHub Pages (free)
+✓ Netlify (free)
+✓ Vercel (free)
+
+All content is live and functional!
+
+=================================================================
+
+
+QUICK REFERENCE CARD
+====================
+
+FILM SCORES:
+- The OceanMaker (1st Place Hamlisch Award)
+- SHIFT (Indie Film Competition)
+
+RESEARCH:
+- MelGenFuse (JSR Publication)
+- SingStyleTransfer (ISMIR 2024)
+
+CONTACT:
+- ml4844@columbia.edu
+- LinkedIn: matthew-lee-2a50b2299
+- Phone: 551-579-8302
+
+FEATURES:
+✓ YouTube embeds
+✓ Expandable descriptions
+✓ Award banners
+✓ Mobile responsive
+✓ Smooth animations
