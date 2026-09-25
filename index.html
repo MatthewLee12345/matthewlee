@@ -1,502 +1,235 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matthew Lee | Music Technology & Computer Science</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo">ML</a>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#mir" class="nav-link">Deep Learning</a></li>
-                <li><a href="#film-scoring" class="nav-link">Film Scoring</a></li>
-                <li><a href="#heybusking" class="nav-link">HeyBusking</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0c0d10" />
+    <meta
+      name="description"
+      content="Matthew Lee is a Columbia University Cognitive Science student, music researcher, film composer and DJ known as B2B.mp3."
+    />
+    <title>Matthew Lee — Research, music & creative technology</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="Matthew Lee home"
+        >matthew lee<span>↗</span></a
+      ><button
+        class="menu-toggle"
+        aria-controls="site-nav"
+        aria-expanded="false"
+      >
+        Menu <span>+</span>
+      </button>
+      <nav id="site-nav" aria-label="Main navigation">
+        <a href="index.html#about">About</a
+        ><a href="index.html#research">Research</a><a href="music.html">Music</a
+        ><a href="resume.pdf" target="_blank" rel="noopener">Resume ↗</a
+        ><a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero" id="home">
+        <div class="hero-top">
+          <span class="eyebrow">Researcher. Composer. DJ.</span
+          ><span class="location">New York / Columbia University</span>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <h1 class="hero-title">Matthew Lee</h1>
-            <p class="hero-subtitle">Music Technology & Computer Science</p>
-            <p class="hero-description">Film Scorer, Computer Scientist, and Performer</p>
-            <div class="hero-buttons">
-                <a href="#about" class="btn btn-primary">Learn More</a>
-                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        <h1>CURIOUS MIND.<br /><span class="iridescent">SONIC WORLD.</span></h1>
+        <div class="hero-bottom">
+          <p>
+            I’m Matthew Lee. I explore how we think,<br class="desktop-only" />
+            how machines learn, and how music moves us.
+          </p>
+          <a class="pill primary" href="music.html"
+            >Explore my music <span>↗</span></a
+          >
+        </div>
+        <div class="signal" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span
+          ><span></span><span></span><span></span><span></span><span></span
+          ><span></span><span></span>
+        </div>
+        <div class="hero-caption">
+          <span>Cognitive science × music technology</span
+          ><a href="#about">A little about me ↓</a>
+        </div>
+      </section>
+      <section id="about" class="section about">
+        <div class="section-label">About Matthew</div>
+        <div class="about-layout">
+          <div class="portrait">
+            <img
+              src="headshot.jpg"
+              alt="Matthew Lee"
+              width="600"
+              height="700"
+              loading="lazy"
+            /><span>Based in New York</span>
+          </div>
+          <div class="about-copy">
+            <h2>Thinking in systems.<br />Feeling in sound.</h2>
+            <p>
+              I’m studying Cognitive Science at Columbia University,
+              specializing in Intelligence, with a minor in Computer Science. My
+              work brings together machine learning, music, and creative
+              expression.
+            </p>
+            <p>
+              That curiosity takes different forms: research in singing style
+              transfer, original scores for the screen, and DJ transitions as
+              <a href="music.html#dj">B2B.mp3</a>.
+            </p>
+            <div class="facts">
+              <div>
+                <span>Education</span
+                ><strong>Columbia College · Class of 2029</strong>
+              </div>
+              <div>
+                <span>Focus</span
+                ><strong>Intelligence, audio & creative technology</strong>
+              </div>
             </div>
+            <a
+              class="text-link"
+              href="resume.pdf"
+              target="_blank"
+              rel="noopener"
+              >View my resume <span>↗</span></a
+            ><a
+              class="subtle-link"
+              href="resume.pdf"
+              download="Matthew-Lee-Resume.pdf"
+              >Download PDF ↓</a
+            >
+          </div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section about-section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <!-- About Content -->
-            <div class="about-content">
-                <div class="about-main">
-                    <div class="profile-image-wrapper">
-                        <img src="headshot.jpg" alt="Matthew Lee" class="profile-image">
-                    </div>
-                    <div class="about-text">
-                        <p>I'm a student at Columbia University pursuing dual interests in computer science and music technology. My work explores the intersection of artificial intelligence, audio engineering, and creative expression.</p>
-                        <p>With experience in film scoring, deep learning research, and community-focused technology projects, I strive to create innovative solutions that bridge technical excellence with artistic vision.</p>
-                        <p>Currently seeking internship opportunities in audio engineering, music technology, and related technical roles for Summer 2026.</p>
-                    </div>
-                </div>
-
-                <div class="about-side-panel">
-                    <div class="resume-viewer">
-                        <h4>Resume</h4>
-                        <iframe 
-                            src="resume.pdf" 
-                            class="resume-iframe" 
-                            title="Matthew Lee Resume"
-                        ></iframe>
-                        <a href="resume.pdf" class="btn btn-resume" target="_blank" rel="noopener">
-                            Open Resume in New Tab
-                        </a>
-                    </div>
-                </div>
+      </section>
+      <section id="research" class="section research">
+        <div class="section-heading">
+          <div>
+            <div class="section-label">Research & projects</div>
+            <h2>Where code<br />meets creativity.</h2>
+          </div>
+          <p>
+            Exploring what happens when we teach<br />machines to listen, learn,
+            and create.
+          </p>
+        </div>
+        <div class="research-grid">
+          <article class="research-card">
+            <div class="research-image">
+              <img
+                src="image1.jpg"
+                alt="Singing style transfer research diagram"
+                loading="lazy"
+              />
             </div>
-        </div>
-    </section>
-
-    <!-- Deep Learning in MIR Section -->
-    <section id="mir" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Deep Learning in Music Information Retrieval</h2>
-            <p class="section-intro">Research and projects exploring machine learning applications in music analysis and generation.</p>
-            <div class="projects-grid">
-                <!-- SingStyleTransfer -->
-                <article class="project-card">
-                    <div class="project-image-wrapper">
-                        <img src="image1.jpg" alt="SingStyleTransfer Project" class="project-image">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">SingStyleTransfer: Genre-Based Singing Style Transfer</h3>
-                        <div class="project-description-wrapper">
-                            <p class="project-description expandable">
-                                <span class="description-preview">Voice style transfer has focused on transforming speech between speakers, leaving singing style, independent of speaker, unexplored.</span>
-                                <span class="description-full"> We investigated a VAE-GAN to perform singing style transfer across genres. This model is evaluated on the SingStyle111 dataset for its ability to carry out genre-to-genre transformations, opening new possibilities for music production and vocal synthesis.</span>
-                            </p>
-                            <button class="see-more-btn" aria-label="See more">See more</button>
-                        </div>
-                        <div class="project-meta">
-                            <span class="meta-tag">VAE-GAN</span>
-                            <span class="meta-tag">Voice Synthesis</span>
-                            <span class="meta-tag">Style Transfer</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://ismir2024program.ismir.net/lbd_470.html" class="project-link" target="_blank" rel="noopener">ISMIR 2024 Late Breaking Demo →</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- MelGenFuse -->
-                <article class="project-card">
-                    <div class="project-image-wrapper">
-                        <img src="image2.jpg" alt="MelGenFuse Project" class="project-image">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">MelGenFuse: Personalized Music Genre Fusion</h3>
-                        <div class="project-description-wrapper">
-                            <p class="project-description expandable">
-                                <span class="description-preview">Music composition has witnessed significant advancements with the infusion of artificial intelligence, particularly using Long Short-Term Memory (LSTM) networks.</span>
-                                <span class="description-full"> This study introduces a novel, two-phase algorithm for personalized fusion music generation that reflects the composer's individual preferences. In the first phase, melodies are generated for individual genres using Recurrent Neural Networks (RNNs) employing techniques like Sequential, Dense, and one-hot encoding. These generated melodies serve as input for the second phase, where an LSTM network fuses them into a coherent composition. Notably, the algorithm incorporates weights set by the composer for each genre, allowing for a personalized composition. A stochastic approach is employed in both phases to introduce creative variance while balancing structural coherence.</span>
-                            </p>
-                            <button class="see-more-btn" aria-label="See more">See more</button>
-                        </div>
-                        <div class="project-meta">
-                            <span class="meta-tag">LSTM</span>
-                            <span class="meta-tag">RNN</span>
-                            <span class="meta-tag">Genre Fusion</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://www.jsr.org/hs/index.php/path/article/view/5919" class="project-link" target="_blank" rel="noopener">Published in the Journal of Student Research (JSR) →</a>
-                        </div>
-                    </div>
-                </article>
-
+            <div class="card-copy">
+              <span class="eyebrow"
+                >Music information retrieval · 2024–2025</span
+              >
+              <h3>Generative singing<br />style transfer</h3>
+              <p>
+                Cross-genre singing style transfer using a VAE-GAN, evaluated on
+                the SingStyle111 dataset. Research in collaboration with
+                Stanford CCRMA professors.
+              </p>
+              <a
+                class="text-link"
+                href="https://ismir2024program.ismir.net/lbd_470.html"
+                target="_blank"
+                rel="noopener"
+                >Read the ISMIR demo ↗</a
+              >
             </div>
-        </div>
-    </section>
-
-    <!-- Film Scoring Section -->
-    <section id="film-scoring" class="section">
-        <div class="container">
-            <h2 class="section-title">Film Scoring</h2>
-            <p class="section-intro">Original compositions and scores for film competitions and creative projects.</p>
-            <div class="projects-grid">
-                <!-- The OceanMaker -->
-                <article class="project-card">
-                    <div class="video-player-wrapper">
-                        <iframe
-                            class="film-video-embed"
-                            src="https://www.youtube.com/embed/7uzjW9onMks"
-                            title="The OceanMaker - Film Score"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                            referrerpolicy="strict-origin-when-cross-origin"
-                        ></iframe>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">The OceanMaker</h3>
-                        <div class="project-description-wrapper">
-                            <p class="project-description expandable">
-                                <span class="description-preview">I scored the animated short film The OceanMaker for the 2024 Marvin Hamlisch Film Scoring Competition. To accompany this short animated action film, I developed an epic orchestral score.</span>
-                                <span class="description-full"> I drew inspiration from the action tracks of Hans Zimmer and themes composed by Michael Giacchino, incorporating emphatic and busy percussion lines and repeating piano motifs throughout the film.</span>
-                            </p>
-                            <button class="see-more-btn" aria-label="See more">See more</button>
-                        </div>
-                        <div class="project-award">
-                            🏆 First Place - Marvin Hamlisch International Music Awards Film/Media Scoring Youth Division 2024
-                        </div>
-                        <div class="project-links">
-                            <a href="https://www.youtube.com/watch?v=7uzjW9onMks" class="project-link" target="_blank" rel="noopener">Watch on YouTube →</a>
-                            <a href="https://www.hamlischawards.org/youth-filmmedia-scoring-24" class="project-link" target="_blank" rel="noopener">Award Details →</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- SHIFT -->
-                <article class="project-card">
-                    <div class="video-player-wrapper">
-                        <iframe
-                            class="film-video-embed"
-                            src="https://www.youtube.com/embed/TpcFLCJnBLQ"
-                            title="SHIFT - Film Score"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
-                            referrerpolicy="strict-origin-when-cross-origin"
-                        ></iframe>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">SHIFT</h3>
-                        <div class="project-description-wrapper">
-                            <p class="project-description expandable">
-                                <span class="description-preview">Rescore for the short indie film SHIFT for the 2024 Indie Film Music Competition. This 3-minute film provides a glimpse into the life of a nurse living in her car to isolate in order to care for patients during the Covid-19 pandemic.</span>
-                                <span class="description-full"> She is kept from her family as she attempts to mask the pain of isolation from her son. Accompanying this film, I developed a melancholic score that balances both comfort and loneliness by using a childish and simple piano theme inspired by Michael Giacchino's score from Up.</span>
-                            </p>
-                            <button class="see-more-btn" aria-label="See more">See more</button>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://www.youtube.com/watch?v=TpcFLCJnBLQ" class="project-link" target="_blank" rel="noopener">Watch on YouTube →</a>
-                        </div>
-                    </div>
-                </article>
+          </article>
+          <article class="research-card">
+            <div class="research-image">
+              <img
+                src="image2.jpg"
+                alt="MelGenFuse music generation research diagram"
+                loading="lazy"
+              />
             </div>
-            <!-- Original Orchestral Compositions -->
-            <div class="original-compositions">
-                <h3 class="original-compositions-title">Original Orchestral Compositions</h3>
-                <p class="original-compositions-intro">
-                    Composed and produced in Logic Pro X using the Nucleus Orchestral Core VST, and fully notated as sheet music in Sibelius for performance and orchestration.
-                </p>
-
-                <!-- Track 1 -->
-                <div class="audio-track" data-track="festival">
-                    <div class="audio-info">
-                        <div class="audio-visualizer">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </div>
-                        <div class="audio-text">
-                            <h4>Festival At Sea</h4>
-                        </div>
-                        <a href="festival_at_sea_score.pdf" class="btn btn-score" target="_blank" rel="noopener">
-                            Download Score
-                        </a>
-                    </div>
-                    <audio controls class="audio-player">
-                        <source src="festival_at_sea.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                    <div class="project-award-list">
-                        <ul class="project-award-items">
-                            <li>
-                                <strong>🏆 Ruth Crawford Seeger Prize</strong> – Finalist, 20K scholarship to Elmhurst University
-                            </li>
-                            <li>
-                                <strong>🏆 Vivaldi International Music Competition</strong> – Absolute First Prize in Original Composition
-                            </li>
-                            <li>
-                                <strong>🏆 World Grand Prix International Music Competition</strong> – Gold Prize in Original Composition
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Track 2 -->
-                <div class="audio-track" data-track="kingdom">
-                    <div class="audio-info">
-                        <div class="audio-visualizer">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </div>
-                        <div class="audio-text">
-                            <h4>Kingdom's Requiem</h4>
-                        </div>
-                        <a href="kingdoms_requiem_score.pdf" class="btn btn-score" target="_blank" rel="noopener">
-                            Download Score
-                        </a>
-                    </div>
-                    <audio controls class="audio-player">
-                        <source src="kingdoms_requiem.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
-
-                <!-- Track 3 -->
-                <div class="audio-track" data-track="march">
-                    <div class="audio-info">
-                        <div class="audio-visualizer">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </div>
-                        <div class="audio-text">
-                            <h4>March Before You Run</h4>
-                        </div>
-                        <a href="march_before_you_run_score.pdf" class="btn btn-score" target="_blank" rel="noopener">
-                            Download Score
-                        </a>
-                    </div>
-                    <audio controls class="audio-player">
-                        <source src="march_before_you_run.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
+            <div class="card-copy">
+              <span class="eyebrow">Generative music · 2023</span>
+              <h3>MelGenFuse</h3>
+              <p>
+                Personalized genre fusion through LSTM and recurrent neural
+                networks, with composer-defined weights guiding the musical
+                blend.
+              </p>
+              <a
+                class="text-link"
+                href="https://www.jsr.org/hs/index.php/path/article/view/5919"
+                target="_blank"
+                rel="noopener"
+                >Read the publication ↗</a
+              >
             </div>
+          </article>
         </div>
-    </section>
-
-    <!-- HeyBusking Section -->
-    <section id="heybusking" class="section">
-        <div class="container">
-            <h2 class="section-title">HeyBusking</h2>
-            <div class="feature-project">
-                <div class="feature-project-content">
-                    <h3 class="feature-project-subtitle">Serving Communities</h3>
-                    <p class="feature-project-description">HeyBusking is a community-focused platform designed to connect street performers with audiences and support local artists. This project combines technology with social impact to create meaningful connections in urban spaces.</p>
-
-                    <!-- What We've Done Section -->
-                    <div class="heybusking-achievements">
-                        <h4 class="heybusking-subheading">What We've Done So Far</h4>
-                        <div class="achievements-grid">
-                            <div class="achievement-card">
-                                <div class="achievement-number">$3000+</div>
-                                <div class="achievement-label">Donations</div>
-                            </div>
-                            <div class="achievement-card">
-                                <div class="achievement-number">30+</div>
-                                <div class="achievement-label">Concerts</div>
-                            </div>
-                            <div class="achievement-card">
-                                <div class="achievement-number">10+</div>
-                                <div class="achievement-label">Bands</div>
-                            </div>
-                        </div>
-                        <div class="achievement-details">
-                            <div class="achievement-detail-item">
-                                <span class="detail-icon">📍</span>
-                                <span>Nursing homes, restaurants, parks, schools & senior centers in New Jersey and New York</span>
-                            </div>
-                            <div class="achievement-detail-item">
-                                <span class="detail-icon">🎯</span>
-                                <span>World Trade Kitchen, school Vex Robotics competition</span>
-                            </div>
-                            <div class="achievement-detail-item">
-                                <span class="detail-icon">🎵</span>
-                                <span>String ensembles, flutists, jazz bands, school chamber ensembles</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Video Grid -->
-                    <h4 class="heybusking-subheading">Our Performances</h4>
-                    <div class="heybusking-video-grid">
-                        <!-- Video 1 -->
-                        <a href="https://youtu.be/jr6GVkL2B9o" target="_blank" rel="noopener" class="heybusking-video-link">
-                            <div class="heybusking-video-thumbnail">
-                                <img src="https://img.youtube.com/vi/jr6GVkL2B9o/hqdefault.jpg" alt="HeyBusking Performance">
-                                <div class="heybusking-play-button">
-                                    <svg viewBox="0 0 68 48" width="48" height="34">
-                                        <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
-                                        <path d="M 45,24 27,14 27,34" fill="#fff"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-
-                        <!-- Video 2 -->
-                        <a href="https://youtu.be/-ScJS_x8hzQ" target="_blank" rel="noopener" class="heybusking-video-link">
-                            <div class="heybusking-video-thumbnail">
-                                <img src="https://img.youtube.com/vi/-ScJS_x8hzQ/hqdefault.jpg" alt="HeyBusking Performance">
-                                <div class="heybusking-play-button">
-                                    <svg viewBox="0 0 68 48" width="48" height="34">
-                                        <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
-                                        <path d="M 45,24 27,14 27,34" fill="#fff"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-
-                        <!-- Video 3 -->
-                        <a href="https://youtu.be/euIY6Y66OzQ" target="_blank" rel="noopener" class="heybusking-video-link">
-                            <div class="heybusking-video-thumbnail">
-                                <img src="https://img.youtube.com/vi/euIY6Y66OzQ/hqdefault.jpg" alt="HeyBusking Performance">
-                                <div class="heybusking-play-button">
-                                    <svg viewBox="0 0 68 48" width="48" height="34">
-                                        <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
-                                        <path d="M 45,24 27,14 27,34" fill="#fff"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-
-                        <!-- Video 4 -->
-                        <a href="https://youtu.be/cBQB3nF9Gqg" target="_blank" rel="noopener" class="heybusking-video-link">
-                            <div class="heybusking-video-thumbnail">
-                                <img src="https://img.youtube.com/vi/cBQB3nF9Gqg/hqdefault.jpg" alt="HeyBusking Performance">
-                                <div class="heybusking-play-button">
-                                    <svg viewBox="0 0 68 48" width="48" height="34">
-                                        <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
-                                        <path d="M 45,24 27,14 27,34" fill="#fff"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-
-                        <!-- Video 5 -->
-                        <a href="https://youtu.be/KrWx21vs__g" target="_blank" rel="noopener" class="heybusking-video-link">
-                            <div class="heybusking-video-thumbnail">
-                                <img src="https://img.youtube.com/vi/KrWx21vs__g/hqdefault.jpg" alt="HeyBusking Performance">
-                                <div class="heybusking-play-button">
-                                    <svg viewBox="0 0 68 48" width="48" height="34">
-                                        <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
-                                        <path d="M 45,24 27,14 27,34" fill="#fff"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-
-                        <!-- Video 6 -->
-                        <a href="https://youtu.be/yJS5asav9S8" target="_blank" rel="noopener" class="heybusking-video-link">
-                            <div class="heybusking-video-thumbnail">
-                                <img src="https://img.youtube.com/vi/yJS5asav9S8/hqdefault.jpg" alt="HeyBusking Performance">
-                                <div class="heybusking-play-button">
-                                    <svg viewBox="0 0 68 48" width="48" height="34">
-                                        <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
-                                        <path d="M 45,24 27,14 27,34" fill="#fff"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-
-                        <!-- Video 7 -->
-                        <a href="https://youtu.be/5nBU5uavwOk" target="_blank" rel="noopener" class="heybusking-video-link">
-                            <div class="heybusking-video-thumbnail">
-                                <img src="https://img.youtube.com/vi/5nBU5uavwOk/hqdefault.jpg" alt="HeyBusking Performance">
-                                <div class="heybusking-play-button">
-                                    <svg viewBox="0 0 68 48" width="48" height="34">
-                                        <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
-                                        <path d="M 45,24 27,14 27,34" fill="#fff"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-
-                        <!-- Video 8 -->
-                        <a href="https://youtu.be/-vA2BXD-nQk" target="_blank" rel="noopener" class="heybusking-video-link">
-                            <div class="heybusking-video-thumbnail">
-                                <img src="https://img.youtube.com/vi/-vA2BXD-nQk/hqdefault.jpg" alt="HeyBusking Performance">
-                                <div class="heybusking-play-button">
-                                    <svg viewBox="0 0 68 48" width="48" height="34">
-                                        <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
-                                        <path d="M 45,24 27,14 27,34" fill="#fff"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-
-                        <!-- Video 9 -->
-                        <a href="https://youtu.be/pGRsQjcwj6E" target="_blank" rel="noopener" class="heybusking-video-link">
-                            <div class="heybusking-video-thumbnail">
-                                <img src="https://img.youtube.com/vi/pGRsQjcwj6E/hqdefault.jpg" alt="HeyBusking Performance">
-                                <div class="heybusking-play-button">
-                                    <svg viewBox="0 0 68 48" width="48" height="34">
-                                        <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#f00"></path>
-                                        <path d="M 45,24 27,14 27,34" fill="#fff"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Channel Button -->
-                    <div class="heybusking-channel-btn-wrapper">
-                        <a href="https://www.youtube.com/channel/UCVqKjVKVaWJnVMcQMxf4EXw" class="btn btn-primary" target="_blank" rel="noopener">
-                            Check Out Our Channel →
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <article class="project-row">
+          <div>
+            <span class="eyebrow">AI content automation · 2026–present</span>
+            <h3>K-Bopping</h3>
+          </div>
+          <p>
+            An automated pipeline for AI-created K-pop mashups. Grew to 1,000+
+            subscribers in its first month.
+          </p>
+        </article>
+      </section>
+      <section class="music-invite section">
+        <div class="section-label">Outside the lab</div>
+        <h2>
+          For the screen.<br /><span class="iridescent"
+            >For the dance floor.</span
+          >
+        </h2>
+        <div class="invite-bottom">
+          <p>
+            Original film scores, orchestral compositions,<br />and a different
+            kind of storytelling as B2B.mp3.
+          </p>
+          <a class="pill primary" href="music.html"
+            >Step into the music <span>↗</span></a
+          >
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section bg-dark">
-        <div class="container">
-            <h2 class="section-title">Get in Touch</h2>
-            <p class="contact-intro">Interested in collaboration or have opportunities in music technology and audio engineering? I'd love to hear from you.</p>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <a href="mailto:ml4844@columbia.edu" class="contact-link">
-                        <span>ml4844@columbia.edu</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/matthew-lee-2a50b2299/" class="contact-link" target="_blank" rel="noopener">
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="tel:551-579-8302" class="contact-link">
-                        <span>551-579-8302</span>
-                    </a>
-                </div>
-            </div>
+      </section>
+    </main>
+    <footer id="contact" class="contact section">
+      <div class="section-label">Let’s connect</div>
+      <h2>Have something<br />in mind<span class="iridescent">?</span></h2>
+      <a class="contact-email" href="mailto:matthewjslee12@gmail.com"
+        >matthewjslee12@gmail.com ↗</a
+      >
+      <div class="footer-bottom">
+        <span>© 2026 Matthew Lee · New York</span>
+        <div>
+          <a
+            href="https://www.linkedin.com/in/matthew-lee-2a50b2299/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn ↗</a
+          ><a
+            href="https://github.com/MatthewLee12345"
+            target="_blank"
+            rel="noopener"
+            >GitHub ↗</a
+          ><a href="resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Matthew Lee. All rights reserved.</p>
-        </div>
+      </div>
     </footer>
-
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>
