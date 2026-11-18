@@ -1,0 +1,11 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+.local-original/
+node_modules/
+.preview/
+# Keep camera originals and oversized source films on disk, outside Git.
+DJ/
+Film Scores/*.mov
+Film Scores/*.mp4
