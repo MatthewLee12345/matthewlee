@@ -71,26 +71,3 @@ document.querySelectorAll('.film-play').forEach(button => button.addEventListene
 document.querySelectorAll('audio,video').forEach(media => media.addEventListener('play', () => {
   document.querySelectorAll('audio,video').forEach(other=>{if(other!==media) other.pause();});
 }));
-// The full admissions list stays visible without motion or JavaScript.
-const schoolWindow = document.querySelector('.school-window');
-if (schoolWindow) {
-  const group = schoolWindow.querySelector('.school-group');
-  const copy = group.cloneNode(true);
-  copy.setAttribute('aria-hidden', 'true');
-  group.after(copy);
-
-  const control = document.querySelector('.motion-control');
-  let paused = false;
-  function updateSchoolMotion() {
-    const enabled = !reducedMotion.matches;
-    schoolWindow.classList.toggle('is-moving', enabled && !paused);
-    control.hidden = !enabled;
-    control.textContent = paused ? 'Resume motion' : 'Pause motion';
-  }
-  control.addEventListener('click', () => {
-    paused = !paused;
-    updateSchoolMotion();
-  });
-  reducedMotion.addEventListener('change', updateSchoolMotion);
-  updateSchoolMotion();
-}
