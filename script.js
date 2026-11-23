@@ -71,20 +71,26 @@ document.querySelectorAll('.film-play').forEach(button => button.addEventListene
 document.querySelectorAll('audio,video').forEach(media => media.addEventListener('play', () => {
   document.querySelectorAll('audio,video').forEach(other=>{if(other!==media) other.pause();});
 }));
-// Fit each native card to the height reported by its own iframe.
-const profileFrames = [...document.querySelectorAll('iframe.profile-card')];
-if (profileFrames.length) {
-  window.addEventListener('message', event => {
-    const frame = profileFrames.find(candidate => candidate.contentWindow === event.source);
-    if (!frame || event.origin !== new URL(frame.src).origin) return;
-    let message = event.data;
-    if (typeof message === 'string') {
-      try { message = JSON.parse(message); } catch { return; }
-    }
-    if (!message || typeof message !== 'object') return;
-    const height = message.type === 'MEASURE' ? message.details?.height : message.height;
-    if (typeof height === 'number' && Number.isFinite(height) && height >= 180 && height <= 1400) {
-      frame.style.height = (Math.ceil(height) + 2) + 'px';
-    }
+// The full admissions list stays visible without motion or JavaScript.
+const schoolWindow = document.querySelector('.school-window');
+if (schoolWindow) {
+  const group = schoolWindow.querySelector('.school-group');
+  const copy = group.cloneNode(true);
+  copy.setAttribute('aria-hidden', 'true');
+  group.after(copy);
+
+  const control = document.querySelector('.motion-control');
+  let paused = false;
+  function updateSchoolMotion() {
+    const enabled = !reducedMotion.matches;
+    schoolWindow.classList.toggle('is-moving', enabled && !paused);
+    control.hidden = !enabled;
+    control.textContent = paused ? 'Resume motion' : 'Pause motion';
+  }
+  control.addEventListener('click', () => {
+    paused = !paused;
+    updateSchoolMotion();
   });
+  reducedMotion.addEventListener('change', updateSchoolMotion);
+  updateSchoolMotion();
 }

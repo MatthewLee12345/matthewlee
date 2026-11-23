@@ -1,6 +1,6 @@
 # Matthew Lee — portfolio
 
-Five standalone pages, self-hosted fonts, and vanilla JavaScript. No build step or install is required.
+Six standalone pages, self-hosted fonts, and vanilla JavaScript. No build step or install is required.
 
 ## Preview
 
@@ -8,15 +8,16 @@ With Node.js 22 or newer, run `npm run dev` in this folder. Open http://localhos
 
 - Home: `index.html`
 - About: `about.html`
-- DJ: `dj.html`
+- DJ press kit: `dj.html`
+- College consulting: `college-consulting.html`
 - Projects: `projects.html`
 - Film scoring: `film-scoring.html`
 
 Optimized files are in `assets/`. See [asset sources](assets/SOURCES.md) for image credits and font licenses.
 
-## Social profiles
+## DJ press kit
 
-The [DJ page](https://matthewjslee.com/dj.html#listen) embeds Instagram’s public profile for @b2b.mp3 and TikTok’s creator profile for @b2b1994. Each platform supplies its own follower total and recent media. Both work on GitHub Pages without credentials. Each heading links directly to the corresponding profile.
+The [electronic press kit](https://matthewjslee.com/dj.html) links to Instagram, TikTok, and SoundCloud. Its reach figures are an editorial snapshot. The expandable audience breakdown uses Instagram's 90-day dashboard through November 22, 2026.
 
 ## Media and publication
 

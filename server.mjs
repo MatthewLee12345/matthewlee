@@ -13,7 +13,7 @@ http.createServer(async(req,res)=>{
     if(requested.split('/').some(part=>part.startsWith('.'))) return send(404,'Not found');
     let relative=requested==='/'?'index.html':requested.slice(1);
     // Only the published site is available over HTTP, never source/config/secrets.
-    const allowed=/^(index|about|dj|projects|film-scoring)\.html$|^(styles\.css|script\.js|resume\.pdf|image[12]\.jpg)$|^assets\/(images|brands|venues|fonts|video)\/.+|^assets\/favicon\.svg$|^Compositions\/.+\.(mp3|pdf)$|^Film Scores\/.+\.jpg$/;
+    const allowed=/^(index|about|dj|projects|film-scoring|college-consulting)\.html$|^(styles\.css|script\.js|resume\.pdf|image[12]\.jpg)$|^assets\/(images|brands|venues|schools|fonts|video)\/.+|^assets\/favicon\.svg$|^Compositions\/.+\.(mp3|pdf)$|^Film Scores\/.+\.jpg$/;
     if(!allowed.test(relative)) return send(404,'Not found');
     const filename=await realpath(path.resolve(root,relative));
     if(!filename.startsWith(root+path.sep)) return send(403,'Forbidden');
